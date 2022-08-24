@@ -543,3 +543,136 @@ form .form_row button {
     transform: translateY(-10px);
     transition: all 0.8s ease-in-out;
 }
+
+/* <!-- ------------------------- ENd-----Solution part------------------------- --> */
+
+.cta{
+    background-image: url("images/overlay.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem !important;
+}
+
+
+.cta h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+.cta_points h6{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.cta_points p{
+    color: #eff0ff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.line{
+    width: 1px;
+    height: 75px;
+    background: #fb5106;
+    margin: 0 0 0 18px;
+}
+.check_icon{margin-top: -68px;}
+.cta_img{z-index: 99;}
+
+
+.form_card{
+    margin-left: -139px;
+    padding: 38px 55px 22px;
+    background: #fff;
+    border-radius: 4px;
+    
+}
+.form_card h2{
+    color: #1c1a4e;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    padding: 16px 0;
+}
+.form_card .input_text{
+    width: 100%;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f7f7fb;
+    border: 1px solid #dcdcdd;
+    font-size: 15px;
+    line-height: 28px;
+    color: #5a626d;
+    font-weight: 400;
+    font-family: "Inter";
+    margin-bottom: 12px;
+    padding-left: 25px;
+}
+.form_card .msg_input{
+    width: 100%;
+    height: 110px;
+    resize: none;
+    border-radius: 4px;
+    background-color: #f7f7fb;
+    border: 1px solid #dcdcdd;
+    font-size: 15px;
+    line-height: 28px;
+    color: #5a626d;
+    font-weight: 400;
+    font-family: "Inter";
+    padding-left: 25px;
+    padding-top: 15px;
+    margin-bottom: 12px;
+}
+.form_card button{
+    width: 100%;
+    height: 46px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #ff4c29;
+    font-size: 15px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Inter";
+    margin-bottom: 30px;
+}
+@media only screen and (max-width:1400px) {
+   .cta .container{
+    max-width: 1042px;
+   }
+}
+@media only screen and (max-width:1200px) {
+    .form_card{
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+   .cta .img_hide_div{
+    display: none !important;
+}
+.form_card{
+    margin-left: 0px;
+}
+}
+
+/* <!-- ------------------------- ENd-----cta part------------------------- --> */
+.provide_div h2{    color: #1e1666;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;}
+    .provide_div p{
+        color: #5a626d;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .provide_div h6{color: #1e1666;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 32px;}
