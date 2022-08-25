@@ -467,7 +467,7 @@ form .form_row button {
     box-shadow: 0px 14px 31px 0px rgb(143 108 248 / 14%);
     border-radius: 4px;
     margin: 15px 3px 45px;
-    padding:40px 10px 30px;
+    padding: 40px 10px 30px;
     border: none !important;
 }
 
@@ -503,7 +503,7 @@ form .form_row button {
 
 /* <!-- ------------------------- ENd-----Service part------------------------- --> */
 
-.solution h2{
+.solution h2 {
     padding: 0 0 18px;
     color: #1e1666;
     font-size: 30px;
@@ -511,42 +511,47 @@ form .form_row button {
     text-align: center;
     line-height: 42px;
 }
-.points h6{
+
+.points h6 {
     color: #000000;
     text-align: right;
     font-size: 18px;
     font-weight: 600;
     line-height: 32px;
 }
-.points p{
+
+.points p {
     text-align: right;
     color: #5a626d;
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
 }
-.points2 h6{
+
+.points2 h6 {
     color: #000000;
     text-align: left;
     font-size: 18px;
     font-weight: 600;
     line-height: 32px;
 }
-.points2 p{
+
+.points2 p {
     text-align: left;
     color: #5a626d;
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
 }
-.solution_img:hover{
+
+.solution_img:hover {
     transform: translateY(-10px);
     transition: all 0.8s ease-in-out;
 }
 
 /* <!-- ------------------------- ENd-----Solution part------------------------- --> */
 
-.cta{
+.cta {
     background-image: url("images/overlay.png");
     width: 100%;
     background-size: cover;
@@ -555,50 +560,59 @@ form .form_row button {
 }
 
 
-.cta h2{
+.cta h2 {
     color: #fff;
     font-size: 30px;
     font-weight: 700;
     line-height: 42px;
 }
-.cta_points h6{
+
+.cta_points h6 {
     color: #fff;
     font-size: 18px;
     font-weight: 600;
     line-height: 32px;
 }
-.cta_points p{
+
+.cta_points p {
     color: #eff0ff;
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
 }
 
-.line{
+.line {
     width: 1px;
-    height: 75px;
+    height: 105px;
     background: #fb5106;
     margin: 0 0 0 18px;
 }
-.check_icon{margin-top: -68px;}
-.cta_img{z-index: 99;}
 
+.check_icon {
+    margin-top: -102px;
+}
 
-.form_card{
+.cta_img {
+    z-index: 99;
+}
+
+.form_card {
     margin-left: -139px;
     padding: 38px 55px 22px;
     background: #fff;
     border-radius: 4px;
-    
+
 }
-.form_card h2{
+
+.form_card h2 {
     color: #1c1a4e;
     font-size: 30px;
     font-weight: 700;
     line-height: 42px;
     padding: 16px 0;
 }
-.form_card .input_text{
+
+.form_card .input_text {
     width: 100%;
     height: 46px;
     border-radius: 4px;
@@ -612,7 +626,8 @@ form .form_row button {
     margin-bottom: 12px;
     padding-left: 25px;
 }
-.form_card .msg_input{
+
+.form_card .msg_input {
     width: 100%;
     height: 110px;
     resize: none;
@@ -628,7 +643,8 @@ form .form_row button {
     padding-top: 15px;
     margin-bottom: 12px;
 }
-.form_card button{
+
+.form_card button {
     width: 100%;
     height: 46px;
     border: 0;
@@ -641,38 +657,153 @@ form .form_row button {
     font-family: "Inter";
     margin-bottom: 30px;
 }
+
 @media only screen and (max-width:1400px) {
-   .cta .container{
-    max-width: 1042px;
-   }
+    .cta .container {
+        max-width: 1042px;
+    }
 }
+
 @media only screen and (max-width:1200px) {
-    .form_card{
+    .form_card {
         margin-right: 0px;
     }
 }
 
 @media only screen and (max-width:767px) {
-   .cta .img_hide_div{
-    display: none !important;
-}
-.form_card{
-    margin-left: 0px;
-}
+    .cta .img_hide_div {
+        display: none !important;
+    }
+
+    .form_card {
+        margin-left: 0px;
+    }
 }
 
+@media only screen and (max-width:363px) {
+    .line {
+        height: 131px;
+    }
+
+    .check_icon {
+        margin-top: -130px;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    .line {
+        height: 163px;
+    }
+
+    .check_icon {
+        margin-top: -164px;
+    }
+}
+
+
 /* <!-- ------------------------- ENd-----cta part------------------------- --> */
-.provide_div h2{    color: #1e1666;
+.provide_div h2 {
+    color: #1e1666;
     font-size: 30px;
     font-weight: 700;
-    line-height: 42px;}
-    .provide_div p{
-        color: #5a626d;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 28px;
+    line-height: 42px;
+}
+
+.provide_div p {
+    color: #5a626d;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.provide_div h6 {
+    color: #1e1666;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+/* <!-- ------------------------- ENd-----provide part------------------------- --> */
+.help {
+    background-image: url(images/help_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position-y: 285px;
+}
+
+.help h2 {
+    color: #1e1666;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 42px;
+}
+
+.help .help_img {
+    border-radius: 4px;
+}
+
+.help h4 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.help .card_row {
+    background-image: url("images/help_overlay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    background-position-y: 82px;
+}
+
+
+
+.help .help_btn {
+    color: #1c1a4e;
+    font-size: 18px;
+    padding: 10px 33px;
+    font-weight: 500;
+    border: none;
+    line-height: 32px;
+    margin-left: 50px;
+    transform: translateY(-20px);
+    transition: all 9s ease-in-out linear;
+}
+
+.help .help_btn:hover {
+    color: #fff;
+    background: var(--main-primary-color);
+    transform: translateY(-27px);
+    transition: all 9s ease-in-out linear;
+}
+@media only screen and (max-width:1199px) {
+    .help .help_btn{
+        margin-left: 12px;
     }
-    .provide_div h6{color: #1e1666;
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 32px;}
+}    
+/* <!-- ------------------------- ENd-----help part------------------------- --> */
+.counter_row{
+    background: var(--main-dark-color);
+    padding: 1.2rem;
+    transform: translate(0, -108px) !important;
+}
+.counter_row_row{   
+     padding-top: 10px;
+}
+.counter_row h4{    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+}
+.counter_row p{
+    color: #eff0ff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.counter_row .counter_row_row .counter_col{
+    padding-left: 20px !important;
+}
