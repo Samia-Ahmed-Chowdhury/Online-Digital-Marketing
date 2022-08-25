@@ -103,17 +103,17 @@ li {
 
 /* .widget li a{    margin-right: 45px;} */
 
-form {
+#form {
     margin-top: -76px;
     margin-left: 58.5rem;
     display: flex;
     width: 220px;
     display: none;
-    transition: all 0.9s linear;
+    transition: all .9s ease;
     z-index: 99;
 }
 
-form .form_row {
+#form .form_row {
     position: relative;
     display: block;
     border: 1px solid black;
@@ -123,7 +123,7 @@ form .form_row {
     margin: 0 33px;
 }
 
-form .form_row input {
+#form .form_row input {
     display: inline-block;
     vertical-align: top;
     width: 100px;
@@ -135,7 +135,7 @@ form .form_row input {
     font-size: 13px;
 }
 
-form .form_row button {
+#form .form_row button {
     position: absolute;
     top: 0;
     width: 26px;
@@ -342,9 +342,11 @@ form .form_row button {
     background-color: #ff4c29;
     padding: 8.5px 33px;
     border: none;
+    transition: all .9s ease;
 }
 
 .hero-btn:hover {
+    transition: all .9s ease;
     transform: translateY(-10px);
     box-shadow: 0px 10px 50px 5px rgba(255, 76, 41, 0.7);
 }
@@ -356,10 +358,12 @@ form .form_row button {
     padding: 8.5px 33px;
     border: none;
     margin-left: 10px;
+    transition: all .9s ease;
 }
 
 .hlper-btn:hover {
     transform: translateY(-10px);
+    transition: all .9s ease;
     box-shadow: 0px 10px 50px 5px rgba(125, 84, 244, 0.7);
 }
 
@@ -491,6 +495,12 @@ form .form_row button {
     line-height: 28px;
 }
 
+@media only screen and (max-width:993px) {
+    .card_first h2 {
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width:991px) {
     .card-up {
         margin: 0 !important;
@@ -544,9 +554,20 @@ form .form_row button {
     line-height: 28px;
 }
 
+.solution_img {
+
+    transition: all .9s ease
+}
+
 .solution_img:hover {
     transform: translateY(-10px);
-    transition: all 0.8s ease-in-out;
+    transition: all .9s ease
+}
+
+@media only screen and (max-width:993px) {
+    .solution h2 {
+        font-size: 25px;
+    }
 }
 
 /* <!-- ------------------------- ENd-----Solution part------------------------- --> */
@@ -670,11 +691,17 @@ form .form_row button {
     }
 }
 
+@media only screen and (max-width:993px) {
+    .cta h2,
+    .form_card h2 {
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width:767px) {
     .cta .img_hide_div {
         display: none !important;
     }
-
     .form_card {
         margin-left: 0px;
     }
@@ -723,9 +750,15 @@ form .form_row button {
     line-height: 32px;
 }
 
+@media only screen and (max-width:380px) {
+    .provide_div h2 {
+        font-size: 25px;
+    }
+}
+
 /* <!-- ------------------------- ENd-----provide part------------------------- --> */
 .help {
-    background-image: url(images/help_bg.png);
+    background-image: url("images/help_bg.png");
     background-repeat: no-repeat;
     background-size: cover !important;
     background-position-y: 285px;
@@ -771,39 +804,321 @@ form .form_row button {
     line-height: 32px;
     margin-left: 50px;
     transform: translateY(-20px);
-    transition: all 9s ease-in-out linear;
+    transition: all .9s ease;
 }
 
 .help .help_btn:hover {
     color: #fff;
     background: var(--main-primary-color);
     transform: translateY(-27px);
-    transition: all 9s ease-in-out linear;
+    transition: all .9s ease;
 }
+
 @media only screen and (max-width:1199px) {
-    .help .help_btn{
+    .help .help_btn {
         margin-left: 12px;
     }
-}    
+}
+
+@media only screen and (max-width:993px) {
+
+    .help h2,
+    .help h4 {
+        font-size: 25px;
+    }
+}
+
 /* <!-- ------------------------- ENd-----help part------------------------- --> */
-.counter_row{
+.counter_row {
     background: var(--main-dark-color);
     padding: 1.2rem;
     transform: translate(0, -108px) !important;
 }
-.counter_row_row{   
-     padding-top: 10px;
+
+.counter_row_row {
+    padding-top: 10px;
 }
-.counter_row h4{    color: #fff;
+
+.counter_row h4 {
+    color: #fff;
     font-size: 32px;
     font-weight: 700;
 }
-.counter_row p{
+
+.counter_row p {
     color: #eff0ff;
     font-size: 15px;
     font-weight: 400;
     line-height: 28px;
 }
-.counter_row .counter_row_row .counter_col{
+
+.counter_row .counter_row_row .counter_col {
     padding-left: 20px !important;
 }
+
+/* <!-- ------------------------- ENd-----counter part------------------------- --> */
+.plans {
+    background-image: url(images/plans_overlay.png);
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-position-x: center;
+    background-position-y: 198px;
+}
+
+.plans h2 {
+    color: #1e1666;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center;
+}
+
+.plans .plans_row {
+    margin-top: 90px;
+}
+
+.plans .card {
+    padding: 0px 10px 30px !important;
+}
+
+.plans .card_plans {
+    background: var(--main-dark-color) !important;
+    padding: 17px 38px !important;
+}
+
+.plans .card_plans h3 {
+    color: #fff;
+    font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.plans .card_plans .price {
+    color: #ff4c29;
+    font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.plans .plans_list {
+    padding: 17px 38px !important;
+}
+
+.plans h6 {
+    padding: 30px 0 25px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.plans ul li {
+    color: #5a626d;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 16px 0;
+    line-height: 28px;
+}
+
+.plans .plans_list ul li:not(:nth-last-child(2)) {
+    border-bottom: 0.3px solid #a8b0bb !important;
+
+}
+
+.plans ul li span {
+    margin-right: 10px;
+}
+
+.plans .plans_list a {
+    display: flex;
+    justify-content: center;
+}
+
+.plans_btn {
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #1c1a4e;
+    padding: 10px 107px;
+    border: none;
+}
+
+.plans_top_card {
+    box-shadow: 0px 14px 31px 0px rgb(255 76 41 / 20%);
+    transform: translateY(-68px) !important;
+}
+
+.plans .card_plans2 {
+    background: var(--main-primary-color) !important;
+    padding: 17px 38px !important;
+}
+
+.plans .card_plans2 h3 {
+    color: #fff;
+    font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.plans .card_plans2 .price {
+    color: #ffffff;
+    font-family: "Inter", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+}
+
+.plans2_btn {
+    margin-top: 17px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: var(--main-primary-color);
+    padding: 10px 107px;
+    border: none;
+}
+
+@media only screen and (max-width:1400px) {
+    .plans .container {
+        max-width: 1377px;
+    }
+}
+
+@media only screen and (max-width:1178px) {
+    .plans .card_plans {
+        padding: 17px 0px !important;
+    }
+
+    .plans .card_plans2 {
+        padding: 17px 0px !important;
+    }
+}
+
+@media only screen and (max-width:993px) {
+
+    .plans h2,
+    .plans .card_plans2 h3,
+    .plans .card_plans2 .price {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .plans_top_card {
+        transform: translateY(0) !important;
+    }
+}
+
+@media only screen and (max-width:855px) {
+
+    .plans_btn,
+    .plans2_btn {
+        padding: 10px 82px;
+    }
+}
+
+@media only screen and (max-width:453px) {
+
+    .plans_btn,
+    .plans2_btn {
+        padding: 10px 38px;
+    }
+}
+
+@media only screen and (max-width:355px) {
+
+    .plans_btn,
+    .plans2_btn {
+        padding: 10px 9px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+
+    .plans .card_plans h3,
+    .plans .card_plans2 h3 {
+        font-size: 25px;
+    }
+}
+
+/* <!-- ------------------------- ENd-----plans part------------------------- --> */
+
+footer {
+    background-image: url("images/footer-bg.png");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem !important;
+}
+
+footer p {
+    margin: 24px 0;
+    column-gap: 0;
+    color: #eff0ff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+footer .social {
+    padding-right: 6rem !important;
+}
+
+footer h6 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+footer form input {
+    width: 100%;
+    max-width: 257px;
+    height: 47px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 28px;
+    color: #5a626d;
+    font-weight: 400;
+    font-family: "Inter";
+    padding-left: 25px;
+}
+
+footer form .submit_btn {
+    width: 60px;
+    height: 47px;
+    border-radius: 0 4px 4px 0;
+    display: inline-block;
+    position: absolute;
+    background: var(--main-primary-color);
+    border: 0;
+    color: transparent;
+}
+
+.col_2 {
+    padding: 0 65px !important;
+}
+
+@media only screen and (max-width:1400px) {
+
+    .col_2 {
+        padding: 0 43px !important;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    footer .social {
+        padding-right: 7rem !important;
+    }
+}
+/* <!-- ------------------------- ENd-----footer part------------------------- --> */
