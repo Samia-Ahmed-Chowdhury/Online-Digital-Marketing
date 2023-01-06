@@ -1100,7 +1100,7 @@ footer form .submit_btn {
     border-radius: 0 4px 4px 0;
     display: inline-block;
     position: absolute;
-    background: var(--main-primary-color);
+    background: var(--primary-color);
     border: 0;
     color: transparent;
 }
